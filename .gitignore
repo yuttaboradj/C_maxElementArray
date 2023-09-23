@@ -1,52 +1,27 @@
-# Prerequisites
-*.d
+// program to find maximum element in an array
+#include<stdio.h>
+int main()
+{
+int a,g,c,d,f,e=0;
+printf("Enter the number of elements in an array: ");
+scanf("%d", &a);
+int b[a];
+for(d=0;d<a;d++)
+{
+printf("Enter digit: ");
+scanf("%d", &g);
+b[d]=g;
+}
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
+for(c=0;c<a;c++)
+{
+if(b[c]>e)
+{
+e= b[c];
+}
+}
+printf("Largest element: %d\n",e);
+return 0;
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+}
